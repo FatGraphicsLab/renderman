@@ -2,6 +2,9 @@
 *.slx
 *.pic
 
+# Pixie
+*.sdr
+
 # Images
 *.tif
 *.tga

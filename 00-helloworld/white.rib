@@ -3,9 +3,10 @@ Format 640 480 1
 LightSource "ambientlight" 1 
 Declare "pass" "string"
 Option "limits" "bucketsize" [32 32]
-Imager "gradient"
+Surface "white" 
+# Imager "black"
 
-Display "sphere.tif" "file" "rgb"
+Display "white.tif" "file" "rgb"
 # Display "+sphere.tif" "framebuffer" "rgb"
 
 # Camera
@@ -15,7 +16,7 @@ ConcatTransform [1.0 0.0 0.0 0  0.0 0.435544 -0.900167 0  0.0 0.900167 0.435544 
 
 WorldBegin
     AttributeBegin
-    Color 0.560784 0.878431 0.341176
+    # Color 0.560784 0.878431 0.341176
     ConcatTransform [1.0 0.0 0.0 0  0.0 1.0 0.0 0  0.0 0.0 1.0 0  0.0 0.0 0.0 1]
     Sphere 100.0 -100.0 100.0 360
     AttributeEnd

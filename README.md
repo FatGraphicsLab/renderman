@@ -12,8 +12,8 @@
 
 ```
 > cd 00-helloworld
-> aqsl helloworld.sl
-> aqsis sphere.rib
+> aqsl white.sl
+> aqsis white.rib
 ```
 
 
@@ -27,9 +27,11 @@
 ## Usage
 
 ```
+> start_env.cmd
+
 > cd 00-helloworld
-> sdrc helloworld.sl
-> rndr sphere.rib
+> sdrc white.sl
+> rndr white.rib
 ```
 
 

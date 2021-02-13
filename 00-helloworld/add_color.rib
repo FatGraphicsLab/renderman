@@ -1,0 +1,23 @@
+Orientation "lh"
+Format 640 480 1
+LightSource "ambientlight" 1 
+Declare "pass" "string"
+Option "limits" "bucketsize" [32 32]
+Surface "add_color" "color surfaceColor" [1 0 1]
+# Imager "black"
+
+Display "add_color.tif" "file" "rgb"
+# Display "+sphere.tif" "framebuffer" "rgb"
+
+# Camera
+Projection "perspective" "fov" [36.0]
+Rotate 180 0 1 0
+ConcatTransform [1.0 0.0 0.0 0  0.0 0.435544 -0.900167 0  0.0 0.900167 0.435544 0  0.955721 9.27594 -440.36 1]
+
+WorldBegin
+    AttributeBegin
+    # Color 0.560784 0.878431 0.341176
+    ConcatTransform [1.0 0.0 0.0 0  0.0 1.0 0.0 0  0.0 0.0 1.0 0  0.0 0.0 0.0 1]
+    Sphere 100.0 -100.0 100.0 360
+    AttributeEnd
+WorldEnd

@@ -28,10 +28,14 @@
 
 ```
 > start_env.cmd
-
 > cd 00-helloworld
+
 > sdrc white.sl
 > rndr white.rib
+
+or
+
+> ..\make_tif.cmd white 
 ```
 
 
